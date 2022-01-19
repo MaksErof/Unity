@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\conveyor\Conveyor.cs" />
+    <Compile Include="Assets\Scripts\conveyor\ConveyorRotation.cs" />
     <Compile Include="Assets\Scripts\conveyor\SpawnConveyor.cs" />
     <Compile Include="Assets\Scripts\wall\SpawnWall.cs" />
     <Compile Include="Assets\Scripts\wall\Wall.cs" />

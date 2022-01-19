@@ -531,3 +531,4 @@ MonoBehaviour:
   _template: {fileID: 9001128639006414531, guid: 73612dac006c5e647a342948c5be2016,
     type: 3}
   _spawnPoint: {fileID: 1701540686}
+  _numberOfConveyorParts: 15
