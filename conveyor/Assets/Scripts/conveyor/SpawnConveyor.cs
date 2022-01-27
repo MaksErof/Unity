@@ -15,7 +15,6 @@ public class SpawnConveyor : MonoBehaviour
 
     public void CreateConveyor(Conveyor template, Transform spawnPoint)
     {
-        float sizeOftemplate = _template.transform.localScale.y;
         Vector3 stepForCreatingNewConveyorParts = new Vector3(0, 0, 1);
 
         for (int i = 0; i < _numberOfConveyorParts; i++)
@@ -23,7 +22,6 @@ public class SpawnConveyor : MonoBehaviour
             Instantiate(_template, spawnPoint.position, Quaternion.Euler(0, 0, 90));
             spawnPoint.position += stepForCreatingNewConveyorParts;
         }
-        
     }
 }
 
