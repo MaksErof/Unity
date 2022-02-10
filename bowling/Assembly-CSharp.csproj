@@ -64,7 +64,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Ball.cs" />
     <Compile Include="Assets\Scripts\BallMove.cs" />
+    <Compile Include="Assets\Scripts\BallPush.cs" />
     <Compile Include="Assets\Scripts\Skittles.cs" />
     <Compile Include="Assets\Scripts\SkittlesBuilder.cs" />
     <Reference Include="UnityEngine">
