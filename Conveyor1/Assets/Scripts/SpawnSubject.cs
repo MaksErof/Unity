@@ -12,7 +12,7 @@ public class SpawnSubject : MonoBehaviour
         CreateItem();
     }
 
-    private void CreateItem()
+    public void CreateItem()
     {
         Instantiate(_subject, _position);
     }

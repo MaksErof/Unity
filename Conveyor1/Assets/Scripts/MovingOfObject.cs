@@ -16,6 +16,6 @@ public class MovingOfObject : MonoBehaviour
 
     public void MoveObject()
     {
-        _rigidbody.AddForce(Vector3.left * _movingSpeed * Time.deltaTime);
+        transform.Translate(Vector3.left * _movingSpeed * Time.deltaTime);
     }
 }
