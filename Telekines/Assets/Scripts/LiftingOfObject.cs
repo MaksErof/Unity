@@ -17,10 +17,10 @@ public class LiftingOfObject : MonoBehaviour
 
     private void Update()
     {
-        ManageOfObject();
+        LiftObject();
     }
 
-    private void ManageOfObject()
+    private void LiftObject()
     {        
         if (Input.GetKey(KeyCode.W))
         {
