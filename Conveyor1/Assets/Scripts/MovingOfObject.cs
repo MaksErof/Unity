@@ -5,13 +5,16 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class MovingOfObject : MonoBehaviour
 {
+    public bool startMovement = false;
+
     [SerializeField] private float _movingSpeed;
 
-    private Rigidbody _rigidbody;
-
-    private void Start()
+    private void Update()
     {
-        _rigidbody = GetComponent<Rigidbody>();
+        if(startMovement == true)
+        {
+            MoveObject();
+        }
     }
 
     public void MoveObject()

@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Conveyor : MonoBehaviour
 {
-    private void OnCollisionStay(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.TryGetComponent(out MovingOfObject movingOfObject))
         {
-            movingOfObject.MoveObject();
+           movingOfObject.startMovement = true;
         }
     }
 }
