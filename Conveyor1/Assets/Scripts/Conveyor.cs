@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
+
 public class Conveyor : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    [SerializeField] private Transform _endPosition;
+    [SerializeField] private float _conveyorSpeed;
+
+    private void OnTriggerStay(Collider other)
     {
-        if(collision.gameObject.TryGetComponent(out MovingOfObject movingOfObject))
-        {
-           movingOfObject.startMovement = true;
-        }
+        other.transform.position = Vector3.MoveTowards(other.transform.position, _endPosition.position, _conveyorSpeed * Time.deltaTime);
     }
 }
