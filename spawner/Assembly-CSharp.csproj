@@ -64,11 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Cilynder.cs" />
-    <Compile Include="Assets\Scripts\Cube.cs" />
-    <Compile Include="Assets\Scripts\Parallelepiped.cs" />
     <Compile Include="Assets\Scripts\SpawnSubjects.cs" />
-    <Compile Include="Assets\Scripts\Sphere.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

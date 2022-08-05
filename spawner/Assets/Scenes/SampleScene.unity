@@ -282,6 +282,7 @@ MonoBehaviour:
   - {fileID: 1656676245}
   - {fileID: 255584425}
   - {fileID: 1225734113}
+  _buttonOfSubjects: 77000000610000007300000064000000
 --- !u!4 &783247043
 Transform:
   m_ObjectHideFlags: 0

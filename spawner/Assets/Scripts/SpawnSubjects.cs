@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class SpawnSubjects : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> _subjects;
-    [SerializeField] private List<Transform> _spawnPosition;
+    [SerializeField] private GameObject[] _subjects;
+    [SerializeField] private Transform[] _spawnPosition;
+    [SerializeField] private KeyCode[] _buttonOfSubjects;
    
     private void Update()
     {
@@ -14,23 +15,12 @@ public class SpawnSubjects : MonoBehaviour
 
     private void Spawn()
     {
-        switch (Input.inputString)
+        for(int i = 0; i < _subjects.Length;i++)
         {
-            case "w":
-                Instantiate(_subjects[0], _spawnPosition[0].position, Quaternion.identity);
-                break;
-
-            case "a":
-                Instantiate(_subjects[1], _spawnPosition[1].position, Quaternion.identity);
-                break;
-
-            case "s":
-                Instantiate(_subjects[2], _spawnPosition[2].position, Quaternion.identity);
-                break;
-
-            case "d":
-                Instantiate(_subjects[3], _spawnPosition[3].position, Quaternion.identity);
-                break;
+            if (Input.GetKeyDown(_buttonOfSubjects[i]))
+            {
+                Instantiate(_subjects[i], _spawnPosition[i].position, Quaternion.identity);                               
+            }
         }
     }
 }
